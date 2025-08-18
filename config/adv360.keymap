@@ -42,6 +42,17 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        esc_hm_tap {
+            bindings = <&kp ESCAPE>;
+            key-positions = <32 41>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
