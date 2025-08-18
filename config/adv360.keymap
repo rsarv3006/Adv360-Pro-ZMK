@@ -9,15 +9,13 @@
  * edit it directly.
  */
 
+#include <dt-bindings/zmk/stp.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/stp.h>
-#include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -72,25 +70,26 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
 
     extra2 {
-      display-name = "Purple";
-      status = "reserved";
+        display-name = "Purple";
+        status = "reserved";
     };
 
     extra3 {
-      display-name = "Cyan";
-      status = "reserved";
+        display-name = "Cyan";
+        status = "reserved";
     };
 
     extra4 {
-      display-name = "Yellow";
-      status = "reserved";
+        display-name = "Yellow";
+        status = "reserved";
     };
-  };
+};
+
 };
