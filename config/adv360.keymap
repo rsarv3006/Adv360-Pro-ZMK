@@ -46,10 +46,11 @@
         compatible = "zmk,combos";
 
         esc_hm_tap {
-            bindings = <&kp ESCAPE>;
+            bindings = <&tog 1>;
             key-positions = <32 41>;
-            timeout-ms = <200>;
-            layers = <0>;
+            timeout-ms = <250>;
+            layers = <0 2>;
+            require-prior-idle-ms = <200>;
         };
     };
 
