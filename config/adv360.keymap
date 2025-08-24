@@ -47,7 +47,7 @@
 
         esc_hm_tap {
             bindings = <&tog 1>;
-            key-positions = <32 41>;
+            key-positions = <33 40>;
             timeout-ms = <250>;
             layers = <0 2>;
             require-prior-idle-ms = <200>;
